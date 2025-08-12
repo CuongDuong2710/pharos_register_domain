@@ -39,7 +39,7 @@ export async function registerDomain(userWallet: string) {
 
   // --- cấu hình chạy ---
   const HOW_MANY: number = parseInt(process.argv[2] || '100', 10); // số lượng tên miền cần đăng ký
-  const DURATION: bigint = 365n * 24n * 60n * 60n; // 1 năm
+  const DURATION: bigint = 30n * 24n * 60n * 60n; // 1 năm
   const RESOLVER: string = ZeroAddress;            // thay nếu có resolver của Pharos
   const DATA: readonly string[] = [];              // bytes[] record, để trống
   const REVERSE_RECORD = false;
